@@ -20,7 +20,6 @@ const Greetings = () => {
     }
   `)
 
-
   return (
     <S.Container>
       <S.Logo src={Logo} />
