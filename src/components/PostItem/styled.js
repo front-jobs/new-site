@@ -10,7 +10,8 @@ export const PostItemLink = styled(Link)`
   display: flex;
   text-decoration: none;
   &:hover {
-    color: #1fa1f2;
+    color: #ef652a;
+    /* text-decoration: underline; */
   }
 `
 export const PostItemWrapper = styled.section`
@@ -22,7 +23,7 @@ export const PostItemWrapper = styled.section`
 `
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background};
+  background: ${props => props.background ? props.background : "#1fa1f2"};
   border-radius: 50%;
   color: #fff;
   display: flex;

@@ -7,5 +7,5 @@ export const Container = styled.section`
   background-position: center;
   background-size: cover;
   height: 25rem;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid #ef652a;
 `
