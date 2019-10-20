@@ -7,6 +7,7 @@ import RecommendedPosts from "../components/RecommendedPosts"
 // import Comments from "../components/Comments"
 
 import * as S from '../components/Post/styled'
+import HeaderPosts from '../components/HeaderPosts'
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -16,6 +17,7 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
+      <HeaderPosts />
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura

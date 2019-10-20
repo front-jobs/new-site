@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Header from "../components/Header"
 import SEO from '../components/seo'
 import PostItem from '../components/PostItem'
 import Pagination from "../components/Pagination"
@@ -18,6 +19,7 @@ const BlogList = props => {
   return (
     <Layout>
       <SEO title="Home" />
+      <Header />
       {postList.map(
         ({
           node: {

@@ -1,15 +1,13 @@
 import React from 'react'
 
 import MenuLinks from '../MenuLinks'
-import Greetings from '../Greetings'
 
 import * as S from './styled'
 
-const Header = () => (
+const HeaderPosts = () => (
   <S.Container>
-    <MenuLinks color="#fff"/>
-    <Greetings />
+    <MenuLinks color="#ef652a" />
   </S.Container>
 )
 
-export default Header
+export default HeaderPosts
