@@ -1,6 +1,6 @@
 ---
 title: 'Front-end Developer'
-place: '[Atibaia - SP]'
+place: 'Atibaia - SP'
 company: 'ACCT'
 date: '2019-08-22 08:51:23'
 thumbnail: /assets/img/mussum-ipsum.jpg

@@ -38,8 +38,19 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  width: 100%;
+`
+export const PostItemDateWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 230px;
+  align-items: flex-end;
 `
 export const PostItemDate = styled.time`
+  font-size: 0.9rem;
+`
+export const PostItemPlace = styled.span`
   font-size: 0.9rem;
 `
 export const PostItemTitle = styled.h1`
