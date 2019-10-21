@@ -19,11 +19,14 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO title={post.frontmatter.title} />
       <HeaderPosts />
       <S.PostHeader>
-        <S.PostDate>
-          {post.frontmatter.date} • {post.timeToRead} min de leitura
-        </S.PostDate>
+        <S.PostDate>{post.frontmatter.date}</S.PostDate>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
+        <S.PostCompany>
+          <S.PostLabel>Empresa:</S.PostLabel> {post.frontmatter.company}
+        </S.PostCompany>
+        <S.PostPlace>
+          <S.PostLabel>Local:</S.PostLabel> {post.frontmatter.place}
+          </S.PostPlace>
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
@@ -42,7 +45,8 @@ export const query = graphql`
       }
       frontmatter {
         title
-        description
+        company
+        place
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
       }
       html

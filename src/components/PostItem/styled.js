@@ -18,7 +18,7 @@ export const PostItemWrapper = styled.section`
   align-items: center;
   border-bottom: 1px solid #38444d;
   display: flex;
-  padding: 2rem 3rem;
+  padding: 1rem;
   width: 100%;
 `
 export const PostItemTag = styled.div`
@@ -27,23 +27,23 @@ export const PostItemTag = styled.div`
   border-radius: 50%;
   color: #fff;
   display: flex;
-  font-size: 1.3rem;
+  font-size: .5rem;
   font-weight: 700;
   justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+  min-height: 50px;
+  min-width: 50px;
   text-transform: uppercase;
 `
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 `
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
 `
 export const PostItemTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
 `
